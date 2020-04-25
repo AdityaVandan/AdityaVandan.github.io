@@ -71,7 +71,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("   <!-- Header\n   ================================================== -->\n\n\n   <header id=\"home\">\n\n    <nav id=\"nav-wrap\">\n\n       <a class=\"mobile-btn\" href=\"#nav-wrap\" title=\"Show navigation\">Show navigation</a>\n        <a class=\"mobile-btn\" href=\"#\" title=\"Hide navigation\">Hide navigation</a>\n       <ul id=\"nav\" class=\"nav\">\n         <li><a class=\"smoothscroll\" href=\"/home#home\">Aditya's Portfolio</a></li>\n         <li class=\"current\"><a class=\"smoothscroll\" href=\"#home\">Home</a></li>\n          <li><a class=\"smoothscroll\" href=\"#about\">About</a></li>\n           <li><a class=\"smoothscroll\" href=\"#resume\">Resume</a></li>\n          <li><a class=\"smoothscroll\" href=\"#portfolio\">Projects</a></li>\n          <li><a class=\"smoothscroll\" href=\"#contact\">Contact</a></li>\n          <li><a class=\"smoothscroll\" routerLink='about'>Blog</a></li>\n         </ul> <!-- end #nav -->\n\n    </nav> <!-- end #nav-wrap -->\n\n    <div class=\"row banner\">\n       <div class=\"banner-text\">\n          <h1 class=\"responsive-headline\"><span typingAnimation [typeSpeed]=\"80\" [startDelay]=\"2000\" >Coming Soon</span></h1>\n          <a type=\"button\" class=\"btn btn-outline-success btn-large\"style=\"font-size: 15px\" href='/home'><i classs='fa fa-arrow-left'></i>Go Back</a> &nbsp;\n          <hr/>\n          <ul class=\"social\">\n            <li><a href=\"mailto://{{person.email}}\"><i class=\"fa fa-envelope\"></i></a></li>\n            <li><a href=\"{{person.github}}\"><i class=\"fa fa-github\"></i></a></li>\n            <li><a href=\"{{person.linkedin}}\"><i class=\"fa fa-linkedin\"></i></a></li>\n             <li><a href=\"{{person.skype}}\"><i class=\"fa fa-skype\"></i></a></li>\n             <!--li><a href=\"{{person.google}}\"><i class=\"fa fa-google-plus\"></i></a></li-->\n             <li><a href=\"{{person.facebook}}\"><i class=\"fa fa-facebook\"></i></a></li>\n             <li><a href=\"{{person.medium}}\"><i class=\"fa fa-medium\"></i></a></li>\n            </ul>\n       </div>\n    </div>\n\n    <p class=\"scrolldown\">\n       <a class=\"smoothscroll\" href=\"#about\"><i class=\"icon-down-circle\"></i></a>\n    </p>\n\n </header> <!-- Header End -->\n");
+/* harmony default export */ __webpack_exports__["default"] = ("   <!-- Header\n   ================================================== -->\n\n\n   <header id=\"home\">\n\n    <nav id=\"nav-wrap\">\n\n       <a class=\"mobile-btn\" href=\"#nav-wrap\" title=\"Show navigation\">Show navigation</a>\n        <a class=\"mobile-btn\" href=\"#\" title=\"Hide navigation\">Hide navigation</a>\n       <ul id=\"nav\" class=\"nav\">\n         <li><a class=\"smoothscroll\" href=\"/\">Aditya's Portfolio</a></li>\n         <li class=\"current\"><a class=\"smoothscroll\" href=\"#home\">Home</a></li>\n          <li><a class=\"smoothscroll\" href=\"#about\">About</a></li>\n           <li><a class=\"smoothscroll\" href=\"#resume\">Resume</a></li>\n          <li><a class=\"smoothscroll\" href=\"#portfolio\">Projects</a></li>\n          <li><a class=\"smoothscroll\" href=\"#contact\">Contact</a></li>\n          <li><a class=\"smoothscroll\" routerLink='about'>Blog</a></li>\n         </ul> <!-- end #nav -->\n\n    </nav> <!-- end #nav-wrap -->\n\n    <div class=\"row banner\">\n       <div class=\"banner-text\">\n          <h1 class=\"responsive-headline\"><span typingAnimation [typeSpeed]=\"80\" [startDelay]=\"2000\" >Coming Soon</span></h1>\n          <a type=\"button\" class=\"btn btn-outline-success btn-large\"style=\"font-size: 15px\" href='/home'><i classs='fa fa-arrow-left'></i>Go Back</a> &nbsp;\n          <hr/>\n          <ul class=\"social\">\n            <li><a href=\"mailto://{{person.email}}\"><i class=\"fa fa-envelope\"></i></a></li>\n            <li><a href=\"{{person.github}}\"><i class=\"fa fa-github\"></i></a></li>\n            <li><a href=\"{{person.linkedin}}\"><i class=\"fa fa-linkedin\"></i></a></li>\n             <li><a href=\"{{person.skype}}\"><i class=\"fa fa-skype\"></i></a></li>\n             <!--li><a href=\"{{person.google}}\"><i class=\"fa fa-google-plus\"></i></a></li-->\n             <li><a href=\"{{person.facebook}}\"><i class=\"fa fa-facebook\"></i></a></li>\n             <li><a href=\"{{person.medium}}\"><i class=\"fa fa-medium\"></i></a></li>\n            </ul>\n       </div>\n    </div>\n\n    <p class=\"scrolldown\">\n       <a class=\"smoothscroll\" href=\"#about\"><i class=\"icon-down-circle\"></i></a>\n    </p>\n\n </header> <!-- Header End -->\n");
 
 /***/ }),
 
@@ -1176,19 +1176,28 @@ let ProjectService = class ProjectService {
     constructor() {
         this.latestProjects = [
             {
+                name: 'Path Finder Visualizer',
+                about: 'Graph algorithms might feel scary if one lacks imagination and therefore to remedy this problem, this project helps in visualizing some of the most important searching algorithms.',
+                link: 'https://adityavandan.github.io/mechtechmeet2020/',
+                github_link: 'https://github.com/AdityaVandan/pathfinder/'
+            },
+            {
                 name: 'Mech Tech Meet Event Website',
                 about: 'This is an event website which was created for the Ujjain Engineering College Tech Festival. This website was made using technologies Javascript,PHP',
                 link: 'https://adityavandan.github.io/mechtechmeet2020/',
                 github_link: 'https://github.com/AdityaVandan/mechtechmeet2020'
-            },
-            {
-                name: 'Path Finder Visualizer',
-                about: 'This project is a work in progress.',
-                link: 'https://adityavandan.github.io/mechtechmeet2020/',
-                github_link: 'https://github.com/AdityaVandan/pathfinder/'
             }
         ];
         this.projects = [
+            {
+                key: '5',
+                name: 'Path Finder Visualizer',
+                about: 'Graph algorithms might feel scary if one lacks imagination and therefore to remedy this problem, this project helps in visualizing some of the most important searching algorithms namely, bfs, dfs, dijkstra, greedy BST, A* and swarm which are used in solving graphs and mazes for the shortest path. This also provides another feature of maze generation in a 2-d Grid. Technologies used: JavaScript, React',
+                link: 'https://adityavandan.github.io/path-finder/',
+                github_link: 'https://github.com/AdityaVandan/path-finder/',
+                image_path: 'pathfinder.jpg',
+                demoPossible: true
+            },
             {
                 key: '1',
                 name: 'NAF Generic Socket Framework for Java',
@@ -1224,15 +1233,6 @@ let ProjectService = class ProjectService {
                 github_link: 'https://github.com/AdityaVandan/team-viewer',
                 image_path: 'team-viewer.jpg',
                 demoPossible: false
-            },
-            {
-                key: '5',
-                name: 'Path Finder Visualizer',
-                about: 'This project is a work in progress.',
-                link: 'https://adityavandan.github.io/pathfinder/',
-                github_link: 'https://github.com/AdityaVandan/pathfinder/',
-                image_path: 'pathfinder.jpg',
-                demoPossible: true
             }
         ];
     }
