@@ -1,0 +1,87 @@
+:root {
+  font-family: Verdana, sans-serif;
+
+  --primaryBackgroundBright: #fff;
+  --primaryBackgroundDark: #2B2B2B;
+  --primaryColorBright: #313131;
+  --secondaryColorBright: #7A7A7A;
+  --primaryColorDark: #fff;
+  --borderBright: #2D2E34;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  min-width: fit-content;
+  /* min-height: 100vh;
+  min-width: 100vw; */
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+}
+
+.main-heading {
+  font-size: 40px;
+}
+
+.header-title {
+  font-size: 18px;
+  letter-spacing: 4px;
+}
+
+.title-font {
+  font-size: 22px;
+}
+
+.text-font {
+  font-size: 16px;
+}
+
+.vertical-align-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vertical-align {
+  display: flex;
+}
+
+.cur-po {
+  cursor: pointer;
+}
+
+.pos-rel {
+  position: relative
+}
+
+@import "./components/index.css";
+@import "./pages/index.css";

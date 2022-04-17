@@ -1,0 +1,15 @@
+.ml71ContainerDiv {
+  display: block;
+  background-color: var(--primaryBackgroundDark);
+  position: fixed;
+  top: 72px;
+  right: 26px;
+  border-radius: 6px;
+}
+
+.ml71HeaderElement{
+  display: block;
+  margin-right: 0 !important;
+  padding: 10px 30px;
+  border-bottom: 1px solid var(--borderBright);
+}

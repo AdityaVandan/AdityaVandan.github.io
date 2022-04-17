@@ -1,0 +1,21 @@
+.hero18Container {
+  background-image: url(/background.jpg);
+  width: 100%;
+  height: 800px;
+}
+
+.hero18Rings1 {
+  border-radius: 50%;
+  padding: 10px;
+  background-color: var(--primaryBackgroundDark);
+}
+
+.hero18Rings2 {
+  border-radius: 50%;
+  padding: 10px;
+  background-color: var(--primaryColorBright);
+}
+
+.hero18Dev {
+  
+}
